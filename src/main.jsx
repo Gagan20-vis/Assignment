@@ -10,7 +10,7 @@ import { store } from './app/store.js';
 import { Provider } from 'react-redux';
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Assignment",
     element: <App />,
     children: [
       {
