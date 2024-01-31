@@ -22,8 +22,8 @@ export default function ShowDetail() {
                     <div style={{ fontSize: '1.2rem' }}>
                         <p><b>Type :</b> {show.type}</p>
                         <p><b>Language :</b> {show.language}</p>
-                        <p><b>Country</b>{show.network.country.name}</p>
-                        <h5><b>Rating : </b>{show.rating.average} / 10</h5>
+                        <p><b>Country</b>{show.network.country && show.network.country.name}</p>
+                        <h5><b>Rating : </b>{show.rating && show.rating.average} / 10</h5>
                         <div className="d-flex">
                             <b>Official Site : </b>
                             <a href={show.officialSite} className="ms-2" target="blank"> {show.officialSite}</a>
