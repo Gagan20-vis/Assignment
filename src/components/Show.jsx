@@ -8,7 +8,7 @@ export default function Show(props) {
     const { show } = props;
     const onClick = () => {
         dispatch(SET_SHOW(show));
-        navigate('/Show');
+        navigate('/Assignment/Show');
     }
     return (
         show && <div className="card my-4" style={{ width: "18rem", border: 'none', background: '#d0d0d0' }}>
